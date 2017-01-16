@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app='MsgApp'>
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <style> body { font-size: 1.2em; }</style>
+    <title>Полинин Покемон</title>
+  </head>
+  <body>
+    <h1>Полинин Покемон</h1>
+    <div ng-controller='MsgController'>
+      У {{name}} есть для Тебя сообщение: <br>
+      {{sayMessage()}}
+      <div>
+        <button ng-click="feedPika()">Покорми Меня</button>
+
+        <br>
+
+        <img ng-src="images/{{stateOfBeing}}.png" height="200" width = "200">
+      </div>
+    </div>
+  </body>
+</html>
